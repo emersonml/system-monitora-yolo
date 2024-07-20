@@ -8,4 +8,4 @@ services:
     ports:
       - "5000:5000"  # Mapeia a porta do host para a porta do contêiner
     volumes:
-      - /srv/volumes/yolo/app/img/_data:/app/img/  # Mapeia o arquivo de entrada para dentro do contêiner
+      - /srv/volumes/system-monitora-yolo/app/img/_data:/app/img/  # Mapeia o arquivo de entrada para dentro do contêiner
