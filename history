@@ -1,0 +1,19 @@
+
+
+curl -X POST http://172.24.0.2:5000/detect -H "Content-Type: application/json" -d '{"image_path": "img/input.jpg"}'
+
+
+source myenvPy/bin/activate
+
+
+========================
+
+
+tenho a seguinte aplicação:
+
+app
+--Dockerfile
+--docker-compose.yml
+
+curl -X POST http://127.0.0.1:5000/detect -H "Content-Type: application/json" -d '{"image_path": "input.jpg"}'
+curl -X POST http://172.24.0.2:5000/detect -H "Content-Type: application/json" -d '{"image_path": "input.jpg"}'
