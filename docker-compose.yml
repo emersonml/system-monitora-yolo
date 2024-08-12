@@ -11,4 +11,9 @@ services:
       - "/dev/rtc:/dev/rtc:ro" # DATE
     volumes:
       - "/etc/localtime:/etc/localtime:ro"  # DATE
-      - /srv/volumes/system-monitora-yolo/app/img/_data:/app/img/  # Mapeia o arquivo de entrada para dentro do contêiner
+      - shared-data:/app/img/
+      # - /srv/volumes/system-monitora-yolo/app/img/_data:/app/img/  # Mapeia o arquivo de entrada para dentro do contêiner
+
+
+volumes:
+  shared-data:
